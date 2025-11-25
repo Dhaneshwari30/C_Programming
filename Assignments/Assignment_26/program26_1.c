@@ -12,7 +12,7 @@ void Pattern(int iNo)
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
         printf("%c\t", ch);
-        ch = ch + 1;
+        ch++;
     }
 }
 
