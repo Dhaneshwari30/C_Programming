@@ -1,4 +1,4 @@
-//4. Accept number of rows and number of columns from user and display below pattern
+//1. Accept number of rows and number of columns from user and display below pattern
 /*
     iRow = 4
     iCol = 4
@@ -39,4 +39,5 @@ int main()
     Pattern(iValue1, iValue2);
 
     return 0;
+
 }
