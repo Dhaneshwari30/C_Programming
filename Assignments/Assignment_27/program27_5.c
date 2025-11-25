@@ -6,7 +6,6 @@
     1 1 1 1
     2 2 2 2
     3 3 3 3 
-    4 4 4 4
 */
 
 #include<stdio.h>
@@ -38,4 +37,5 @@ int main()
     Pattern(iValue1, iValue2);
 
     return 0;
+
 }
