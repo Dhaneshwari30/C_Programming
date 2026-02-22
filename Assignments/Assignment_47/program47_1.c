@@ -1,4 +1,4 @@
-//Write a program which Display number that are greater than given number
+//Write a program which print List in reverse order
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -38,16 +38,12 @@ void InsertFirst(PPNODE Head, int no)
     }
 }
 
-void DisplayGreater(PNODE Head, int X)
+void DisplayReverse(PNODE Head)
 {
-    while(Head != NULL)
+    if(Head != NULL)
     {
-        if(Head->Data > X)
-        {
-            printf("%d\t",Head->Data);
-        }
-
-        Head = Head->Next;
+        DisplayReverse(Head->Next);
+        printf("| %d |->",Head->Data);
     }
 }
 
@@ -65,8 +61,7 @@ int main()
     InsertFirst(&first,21);
     InsertFirst(&first,28);
 
-    DisplayGreater(first,30);
+    DisplayReverse(first);
 
     return 0;
-
 }
